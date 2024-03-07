@@ -46,7 +46,7 @@ def login():
         else:
             return render_template('login.html')
 
-    return send_file('login.html')
+    return render_template('login.html')
 
 @app.route('/importar', methods=['GET', 'POST'])
 def read_excel():

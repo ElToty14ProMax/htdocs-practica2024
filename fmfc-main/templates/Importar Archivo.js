@@ -1,20 +1,20 @@
 document.getElementById('fileInput').addEventListener('change', function(e) {
     var filePath = e.target.value;
     document.getElementById('filePath').value = filePath;
-  });
+});
 
-  function importFile() {
+function importFile() {
     // Aquí puedes agregar el código para importar el archivo seleccionado
     alert('Archivo importado');
-  }
+}
 document.addEventListener('DOMContentLoaded', function() {
-  // Obtener los elementos del menú desplegable
-  var infoLink = document.querySelector('a[href="#"]');
-  var editLink = document.querySelectorAll('a[href="#"]')[1];
+    // Obtener los elementos del menú desplegable
+    var infoLink = document.querySelector('a[href="#"]');
+    var editLink = document.querySelectorAll('a[href="#"]')[1];
 
-  // Obtener los contenidos a mostrar
-  var userInfoCard = document.getElementById('userInfoCard');
-  var userEditForm = document.getElementById('userEditForm');
+    // Obtener los contenidos a mostrar
+    var userInfoCard = document.getElementById('userInfoCard');
+    var userEditForm = document.getElementById('userEditForm');
 
     // Función para mostrar el contenido
     function showContent(content) {

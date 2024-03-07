@@ -119,7 +119,7 @@ def read_excel():
 
         return 'Tabla creada y registros insertados correctamente.'
     
-    return render_template("import.html")
+    return render_template("Importar Archivo.html")
 
 @app.route('/datos', methods=['GET'])
 def obtener_datos():
@@ -209,7 +209,7 @@ def mostrar_datos():
     conn.close()
 
     # Pasar los datos a la plantilla HTML
-    return render_template('mostrar_datos.html', data=resultados, columns=column_names)
+    return render_template('Mostrar Datos.html', data=resultados, columns=column_names)
 
 if __name__ == '__main__':
     app.run(debug=True)
